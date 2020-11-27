@@ -40,7 +40,7 @@ public class CustomAuthenticator implements Authenticator {
     @Nullable
     @Override
     public Request authenticate(@Nullable Route route, Response response) throws IOException {
-        String authHeader = "Basic " + Base64.encodeToString(("androidApp:123").getBytes(), Base64.NO_WRAP);
+        String authHeader = "Basic " + Base64.encodeToString(("angularapp:1234567").getBytes(), Base64.NO_WRAP);
 
         Token token = tokenManager.getToken();
 

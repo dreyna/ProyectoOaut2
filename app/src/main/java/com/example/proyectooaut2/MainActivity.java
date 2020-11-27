@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void obtenerToken(){
-        String authHeader = "Basic " + Base64.encodeToString(("androidApp:123").getBytes(), Base64.NO_WRAP);
+        String authHeader = "Basic " + Base64.encodeToString(("angularapp:1234567").getBytes(), Base64.NO_WRAP);
         Call<Token> call = WebServiceOAuth
                 .getInstance()
                 .createService(WebServiceOAuthApi.class)
